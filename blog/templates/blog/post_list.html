@@ -4,6 +4,9 @@
     {% for post in posts %}
         <article class="post">
             <h2><a href="">{{ post.title }}</a></h2>
+            <time class="date"> <!--- Mostra a data das publicações --->
+                {{ post.published_date }}
+            </time>
             <p>{{ post.text|linebreaksbr }}</p>
         </article>
     {% endfor %}
